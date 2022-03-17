@@ -1,6 +1,11 @@
 import './App.css';
 
 function App() {
+  // const [searchedTracks, setSearchedTracks] = useState([]);
+  // const [playlistTracks, setPlaylistTracks] = useState([]);
+  // const [spotifyToken, setSpotifyToken] = useState(null);
+
+
   return (
     <div>
       <h1>Ja<span className="highlight">mmm</span>ing</h1>
