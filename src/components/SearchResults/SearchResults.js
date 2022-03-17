@@ -1,10 +1,21 @@
-import './SearchResults.css';
+import './SearchResults.css'
+import Track from '../Track/Track'
 
 function SearchResults(props) {
   return (
     <div className="SearchResults">
       <h2>Results</h2>
-  {/* <!-- Add a TrackList component --> */}
+      <div className="TrackList">
+            {
+                props.tracks.map(track => {
+                    return(<Track
+                        key={track.id}
+                        track={track}
+                        trackActionCharacter="+"
+                        handleTrackAction={props.addTrackToPlaylist}/>)
+                })
+            }
+      </div>
     </div>
   );
 }
