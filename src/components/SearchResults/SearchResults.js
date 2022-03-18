@@ -8,7 +8,7 @@ function SearchResults(props) {
       <div className="TrackList">
             {
                 props.tracks.map(track => {
-                    return(<Track
+                    return (<Track
                         key={track.id}
                         track={track}
                         trackActionCharacter="+"
